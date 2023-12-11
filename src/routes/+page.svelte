@@ -1,2 +1,13 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import PageWrapper from '$lib/navigation/PageWrapper.svelte'
+</script>
+
+<PageWrapper>
+	<h1>Homepage</h1>
+	<hr />
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate nostrum, vero explicabo
+		sunt ipsum asperiores. Molestias nostrum mollitia cumque veniam eum error atque, dolores
+		nesciunt voluptas ea consectetur sed delectus.
+	</p>
+</PageWrapper>
