@@ -11,7 +11,7 @@
 	const modalStore = getModalStore()
 	const modal: ModalSettings = {
 		body: 'See the submitted data in the console.',
-		component: 'message',
+		component: 'MessageModal',
 		response: data => console.log(data),
 		title: 'Write a new message',
 		type: 'component'

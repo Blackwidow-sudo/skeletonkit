@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { DrawerSettings, ModalComponent } from '@skeletonlabs/skeleton'
+	import type { DrawerSettings } from '@skeletonlabs/skeleton'
 
 	import {
 		AppBar,
@@ -14,7 +14,7 @@
 	import '../app.postcss'
 	import routes from '$lib/routes'
 	import Navbar from '$lib/navigation/Navbar.svelte'
-	import { MessageModal } from '@modals'
+	import modalRegistry from '@modals'
 
 	/**
 	 * Init & Config
@@ -24,9 +24,6 @@
 	const drawerStore = getDrawerStore()
 	const drawerSettings: DrawerSettings = {
 		width: 'w-80'
-	}
-	const modalRegistry: Record<string, ModalComponent> = {
-		message: { ref: MessageModal }
 	}
 
 	/**
@@ -48,12 +45,12 @@
 			slot="lead"
 			class="flex items-center">
 			<button
-				class="lg:hidden btn btn-sm mr-4"
+				class="mr-4 lg:hidden btn btn-sm"
 				on:click={onOpenDrawer}>
 				<span>
 					<svg
 						viewBox="0 0 100 80"
-						class="fill-token w-4 h-4">
+						class="w-4 h-4 fill-token">
 						<rect
 							width="100"
 							height="20" />
