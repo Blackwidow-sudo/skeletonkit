@@ -1,7 +1,7 @@
 # SkeletonKit
 
-A small SvelteKit starter with SkeletonUI & TailwindCSS inluded.
-Navigation is already included via an responsive Sidebar and its easy to add new Modals/Dialogs or use the Toast for system messages.
+A small SvelteKit starter with SkeletonUI & TailwindCSS included.
+Navigation is already included via responsive Sidebar and its easy to add new Modals/Dialogs or use the Toast for system messages.
 
 ## Clone the project
 
